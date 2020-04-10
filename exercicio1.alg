@@ -11,7 +11,7 @@ inicio
       se (sex = "masculino")entao
          masc <- (masc + 1):
          // pega resposta do usuario masculino
-         escreva("gostou do nosso produto? sim/não :")
+         escreva("gostou do nosso produto? sim/nÃ£o :")
          leia(resp)
          se (resp = "sim")entao
             positivom <-  (positivom + 1):
@@ -22,7 +22,7 @@ inicio
       se (sex = "feminino")entao
          femin <- (femin + 1):
          // pega resposta do usuario feminino
-         escreva("gostou do nosso produto? sim/não :")
+         escreva("gostou do nosso produto? sim/nÃ£o :")
           leia(resp)
           se (resp = "sim")entao
              positivof <-  (positivof + 1):
@@ -30,11 +30,13 @@ inicio
               negativof <- (negativof + 1)
          fimse
       fimse
+      //calculo porcentagem
       porcentf <- (positivof/150)*100
       porcentm <- (negativom/150)*100
-      escreval("quantidade de pessoas que falaram sim igual à ", positivof + positivom)
-      escreval("quantidade de pessoas que falaram não igual a ", negativof + negativom)
-      escreval("porcentagem de mulheres que disseram sim é igual à", porcentf,"%")
-      escreval("porcentagem de homens que disseram não é igual à", porcentm,"%")
+      //mostra respostas na tela
+      escreval("quantidade de pessoas que falaram sim igual Ã  ", positivof + positivom)
+      escreval("quantidade de pessoas que falaram nÃ£o igual a ", negativof + negativom)
+      escreval("porcentagem de mulheres que disseram sim Ã© igual Ã ", porcentf,"%")
+      escreval("porcentagem de homens que disseram nÃ£o Ã© igual Ã ", porcentm,"%")
 
 fimalgoritmo
